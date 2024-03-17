@@ -1,0 +1,59 @@
+/* Reset default margin and padding */
+ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  /* Style the navbar */
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the list items */
+  .nav-list {
+    list-style-type: none;
+  }
+  
+  /* Style the links */
+  .nav-item a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+  }
+  
+  /* Style the dropdown */
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the dropdown links */
+  .dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Show the dropdown when hovering */
+  .nav-item:hover .dropdown {
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .nav-item:hover a {
+    background-color: #555;
+  }

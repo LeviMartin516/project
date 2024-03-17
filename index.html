@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Bar with Submenus</title>
+<style>
+  /* Style the menu bar */
+  .menu-bar {
+    background-color: #333;
+  }
+
+  /* Style the main menu */
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  /* Style the menu items */
+  .menu li {
+    float: left;
+  }
+
+  /* Style the menu links */
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change color of menu links on hover */
+  .menu li a:hover {
+    background-color: #111;
+  }
+
+  /* Style the submenu */
+  .submenu {
+    position: relative;
+  }
+
+  /* Style the submenu content */
+  .submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  /* Style the submenu links */
+  .submenu-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Style the submenu links */
+  .submenu-content ul li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Show the submenu content on hover */
+  .submenu:hover .submenu-content {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="menu-bar">
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li class="submenu">
+      <a href="#">Products</a>
+      <div class="submenu-content">
+        <ul>
+          <li><a href="#">Product 1</a></li>
+          <li><a href="#">Product 2</a></li>
+          <li><a href="#">Product 3</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
